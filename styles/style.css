@@ -73,6 +73,7 @@ video {
 .result__video-container {
   position: relative;
   inline-size: 711px;
+  height: 386px;
   margin: 0 0 11px;
 }
 
@@ -120,6 +121,7 @@ video {
 }
 
 .search-form__textfield {
+  appearance: none;
   border-top: 1px solid #FFF;
   border-right: none;
   border-bottom: 1px solid #FFF;
@@ -149,7 +151,7 @@ video {
 }
 
 .search-form__textfield:focus-visible {
-  outline: none;
+  outline: 1px #FFF;
 }
 
 .search-form__checkbox-list {
@@ -231,14 +233,16 @@ video {
   position: relative;
   overflow-y: scroll;
   block-size: 298px;
-  scrollbar-width: none;
+  /*scrollbar-width: none;*/
 }
 
 /* Removes scrollbar for most other browsers */
-/* https://caniuse.com/?search=webkit-scrollbar */
+/* https://caniuse.com/?search=webkit-scrollbar 
 .content__list::-webkit-scrollbar {
-  display: none;
-}
+  display: none; 
+  }
+  */
+
 
 .content__list-item:not(:last-child) {
   margin: 0 0 34px;
